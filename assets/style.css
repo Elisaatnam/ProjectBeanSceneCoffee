@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Playfair;
+    src: url(./font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Clicker;
+    src: url(./font/ClickerScript-Regular.ttf);
+}
+
+:root {
+    --space-out: 8rem;
+    --white: #fff;
+    --black: #000;
+    --main-color: #603809;
+    --sec-color: #707070;
+    --btn-color: #F9C06A;
+}
+
+
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--black);
+    background-color: var(--btn-color);
+    padding: 1.5rem 4rem;
+    border-radius: 25px;
+    margin: 1.5rem 0;
+    display: inline-block;
+}
+
+
+html {
+    font-family: Playfair, sans-serif;
+    font-size: 62.5%;
+}
+
+nav {
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-family: Clicker, sans-serif;
+    font-size: 22rem;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 5.4rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+h4 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+
+p {
+    font-size: 2rem;
+    color: var(--sec-color);
+}
+
+/* HEADER */
+
+header {
+    min-height: 100vh;
+    color: var(--white);
+    background: linear-gradient(300deg, rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.393)),
+    url("./img/header.png") no-repeat center;
+    background-size: cover;
+}
+
+header nav a {
+    color: var(--white);
+    padding: 0 2vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+/* nicht mit BREAKS (br) ARBEITEN SONDERN FOLGENDES: max-with nehmen*/
+
+header section {
+    max-width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50rem;
+    margin: var(--space-out);
+}
+
+header section p, .chance article p {
+    color: var(--white);
+}
+
+header section p, p {
+    line-height: 4rem;
+    font-weight: 200;
+}
+
+/* Section 1  .discover*/
+
+.discover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--space-out);
+    height: 40rem;
+}
+
+.discover article {
+    max-width: 50vw;
+}
+
+.discover img {
+    max-width: 40rem;
+}
+
+/* Section2 .splash */
+
+.splash {
+    width: 20rem;
+    margin: -2.5rem 0 0 0;
+}
+
+/* Section 3 .different */
+
+.different {
+    text-align: center;
+    padding: var(--space-out);
+}
+
+.different article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0 0 3rem 0;
+}
+
+.different p:first-of-type {
+    margin-bottom: 3rem;
+}
+
+.different article div {
+    padding: 1rem;
+    max-width: 260px;
+}
+
+.different article div h3 {
+    margin-bottom: 1rem;
+}
+
+.different article div p {
+    line-height: 3rem;
+}
+
+/* Icons verkleinern plus margin*/
+.different article div img {
+    max-width: 8rem;
+    margin: 1.5rem 0;
+}
+
+.different article div:nth-of-type(1) {
+    background-color: burlywood;
+}
+.different article div:nth-of-type(2) {
+    background-color: rgba(222, 184, 135, 0.71);
+}
+.different article div:nth-of-type(3) {
+    background-color: rgba(222, 184, 135, 0.42);
+}
+.different article div:nth-of-type(4) {
+    background-color: rgba(222, 184, 135, 0.175);
+}
+
+
+/* Letzte section .chance */
+
+.chance {
+    color: var(--white);
+    background: linear-gradient(300deg, rgba(79, 32, 0, 0.582), rgba(79, 32, 0, 0.573)),
+    url("./img/bgimg.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-out);
+    min-height: 70vh;
+}
+
+.chance h2 {
+    color: var(--white);
+}
+
+.chance article {
+    max-width: 45vw;
+}
+
+
+
